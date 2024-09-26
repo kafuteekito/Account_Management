@@ -1,6 +1,7 @@
-# PersonalAccount Banking System
+# Personal Account Banking System
 
 This Java project simulates a simple banking system that allows users to create personal accounts, deposit and withdraw money, and view transaction history.
+Also all the codes are in src folder
 
 ## Table of Contents
 - [Overview](#overview)

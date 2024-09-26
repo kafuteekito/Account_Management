@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        PersonalAccount myMBANK = new PersonalAccount(1, "Mark Twain");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Deposited some money to account: " + myMBANK.getAccountHolder());
+        myMBANK.deposit(200);
+        myMBANK.deposit(50.5);
+        myMBANK.deposit(-1);
+        System.out.println();
+
+        System.out.println("Spent some money from account: " + myMBANK.getAccountHolder());
+        myMBANK.withdraw(20);
+        myMBANK.withdraw(100.11);
+        myMBANK.withdraw(1000.00);
+        System.out.println();
+
+        myMBANK.printTransactionHistory();
+        System.out.println();
+
+        System.out.println("Current Balance " + myMBANK.getBalance() + " for Account " + myMBANK.getAccountHolder() + " with number " + myMBANK.getAccountNumber());
     }
 }

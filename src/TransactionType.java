@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public enum TransactionType {
+public enum TransactionType{
+    withdrawal, deposit;
 }
